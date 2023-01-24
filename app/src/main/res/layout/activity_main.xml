@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vat calculator"
+            android:textSize="35dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter product price"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+            
+        </TextView>
+        
+        <EditText
+            android:id="@+id/edit_price"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:hint="Enter Price"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:layout_margin="10dp">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter vat rate"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+        </TextView>
+        
+        <EditText
+            android:id="@+id/edit_vat"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:hint="Enter Rate"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_baseline_percent_24"
+            android:layout_margin="10dp">
+
+        </EditText>
+        
+        <Button
+            android:id="@+id/btn_calculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_margin="10dp">
+
+        </Button>
+
+
+
+            
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
